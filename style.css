@@ -247,8 +247,15 @@ box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.1);
     }
     .hero {
         flex-direction: column;
-        height:90vh; 
+        /* min-height:90vh;  */
+        height:100vh;
     }
+   
+    .hero-right img{
+       width:80%;
+       margin:0 10%;
+    }
+
     .hero-left h1{
         font-size: 28px;
         text-align: center
