@@ -1,0 +1,11 @@
+nav{
+    box-shadow: none;
+    background: lightblue;
+}
+nav .brand-logo{
+    color:green;
+}
+.nav-link{
+    color:black;
+    font-weight: 500;
+}

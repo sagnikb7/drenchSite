@@ -1,0 +1,280 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+}
+
+button {
+    font-family: 'Poppins', sans-serif;
+}
+
+
+/* navbar */
+
+header {
+    flex-direction: row;
+    width: 90%;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    min-height: 15vh;
+}
+
+.logo-wrapper {
+    flex: 1;
+    display: flex;
+    align-items: center;
+}
+
+.logo-wrapper img {
+    width: 54px;
+    height: 54px;
+    margin-right: 6px;
+
+}
+
+.navbar {
+    flex: 2;
+
+}
+
+.navbar ul {
+    list-style: none;
+}
+
+.navLink {
+    text-decoration: none;
+    padding: 10px 16px;
+    color: #bdbdbd;
+    font-weight: bold;
+}
+
+.navLink:hover {
+    background: #eeeeee;
+}
+
+.nav-wrapper {
+    display: flex;
+    justify-content: space-around;
+}
+
+.extra-buttons {
+    display: flex;
+    justify-content: flex-end;
+    flex: 1;
+}
+
+.extra-buttons a {
+    text-decoration: none;
+    color: #fafafa;
+    font-size: 14px;
+    font-weight: bold;
+    background: black;
+    padding: 8px 16px;
+    border-radius: 25px;
+}
+
+/* background  */
+.big-circle {
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    z-index: -1;
+    height: 80%;
+    opacity: 0.4;
+}
+
+/* Hero section */
+
+
+main {
+    width: 90%;
+    margin: auto;
+}
+
+.hero {
+    /* background: yellow; */
+    display: flex;
+    min-height: 85vh;
+    align-items: center;
+}
+
+.hero-left {
+    flex: 1;
+    padding: 0px 20px;
+}
+.hero-right {
+    flex: 1;
+    padding: 0px 20px;
+}
+
+
+
+.hero-left h1 {
+    font-size: 48px;
+    font-weight: 600;
+    margin-bottom: 16px;
+    
+}
+
+.hero-left p {
+    font-size: 18px;
+    margin-bottom: 32px;
+    color:#333333;
+}
+
+.hero-left p span {
+
+    font-weight: bold;
+    color: dodgerblue;
+
+}
+
+.hero-right img {
+    height: auto;
+    width: 100%;
+}
+
+.hero-button1 {
+    
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 16px;
+    text-transform: capitalize;
+    border-radius: 4px;
+    padding: 10px 14px;
+    margin-right:16px;
+    transition: 0.3s ease-in;
+    box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.1);
+}
+.hero-button1-style1{
+    color: white;
+    background: #195AB0;
+}
+.hero-button1-style2{
+    background: white;
+    color: #195AB0;
+    border:2px solid #195AB0;
+}
+
+.hero-button1-style1:hover{
+    background:black;
+}
+.hero-left-buttons{
+ padding:0px;
+}
+
+/* how it works section */
+.how-it-works{
+    /* background:linear-gradient(left,); */
+    height: 100vh;
+}
+.how-it-works h1{
+text-align: center;
+font-size: 40px;
+font-weight: 600;
+margin-top:40px;
+}
+.how-it-works h4{
+    text-align: center;
+    font-size: 16px;
+    color:black;
+    font-weight: 400;
+    margin-bottom: 40px;
+}
+.how-it-works-wrapper{
+display:flex;
+
+}
+.hiw-card{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    flex:1;
+    
+   
+}
+.hiw-card img{
+width: 65%;
+height: auto;
+border-radius: 50%;
+margin-bottom: 20px;
+box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.1);
+}
+.hiw-card h5{
+    font-weight: bold;
+    font-size: 24px;
+    margin-bottom: 18px;
+}
+.hiw-card p{
+    font-size: 18px;
+    width:60%;
+    text-align: center;
+}
+
+@media only screen and (max-width: 1024px) {
+    /* hero */
+    .hero {
+        min-height: 50vh;
+    }
+    /* background */
+    .big-circle {
+        display: none;
+    }
+}
+
+/* mobile screens */
+@media only screen and (max-width: 768px) {
+
+    /* navbar */
+    header {
+        flex-direction: column;
+        min-height: 20vh;
+    }
+    .extra-buttons {
+        display: none;
+      
+    }
+
+    /* hero */
+    main {
+        width: 100%;
+    }
+    .hero {
+        flex-direction: column;
+        height:90vh; 
+    }
+    .hero-left h1{
+        font-size: 28px;
+        text-align: center
+    }
+    .hero-left p{
+        font-size: 16px;
+        text-align: center
+    }
+    .hero-left-buttons{
+        text-align: center;
+    }
+
+    
+
+    /* background */
+    .big-circle {
+        display: none;
+    }
+    /* how it works */
+    .how-it-works-wrapper{
+        flex-direction: column;
+    }
+    .hiw-card img{
+        width: 50%;
+        }
+    .hiw-card p{
+        margin-bottom: 10px;
+    }
+}
