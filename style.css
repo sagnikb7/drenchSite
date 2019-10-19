@@ -140,13 +140,14 @@ main {
     font-size: 48px;
     font-weight: 600;
     margin-bottom: 16px;
+    color:#212121;
 
 }
 
 .hero-left p {
     font-size: 18px;
     margin-bottom: 32px;
-    color: #333333;
+    color: #424242;
 }
 
 .hero-left p span {
@@ -468,7 +469,7 @@ margin-right:20px;
 
     .hero-left p {
         font-size: 16px;
-        text-align: center
+        text-align: justify;
     }
 
     .hero-left-buttons {
