@@ -12,6 +12,18 @@ button {
     font-family: 'Poppins', sans-serif;
 }
 
+.subheading1{
+    font-size: 40px;
+    font-weight: 600;
+    color:#212121;
+}
+
+.subheading2{
+    font-size: 16px;
+    font-weight: 400;
+    color:#424242;
+}
+
 
 /* navbar */
 
@@ -189,16 +201,11 @@ main {
 
 .how-it-works h1 {
     text-align: center;
-    font-size: 40px;
-    font-weight: 600;
     margin-top: 40px;
 }
 
 .how-it-works h4 {
     text-align: center;
-    font-size: 16px;
-    color: black;
-    font-weight: 400;
     margin-bottom: 40px;
 }
 
@@ -247,15 +254,9 @@ main {
 }
 .features h1{
     text-align: center;
-    font-size: 40px;
-    font-weight: 600;
-    /* margin-top: 40px; */
 }
 .features h4 {
     text-align: center;
-    font-size: 16px;
-    color: black;
-    font-weight: 400;
     margin-bottom: 40px;
 }
 .features-wrapper{
@@ -318,8 +319,6 @@ margin-bottom: 100px;
 }
 .faq h1{
     text-align: center;
-    font-size: 40px;
-    font-weight: 600;
     margin-top: 40px;
 }
 .faq h3{
@@ -328,9 +327,6 @@ margin-bottom: 100px;
 }
 .faq h4 {
     text-align: center;
-    font-size: 16px;
-    color: black;
-    font-weight: 400;
     margin-bottom: 40px;
 }
 .faq p{
@@ -381,7 +377,7 @@ footer p{
     color:white;
 }
 .footer-right img{
-width:48px;
+width:36px;
 margin-top:20px;
 margin-right:20px;
 }
@@ -391,15 +387,10 @@ margin-right:20px;
 }
 .contact-us h1{
     text-align: center;
-    font-size: 40px;
-    font-weight: 600;
     margin-top: 40px;
 }
 .contact-us h4{
     text-align: center;
-    font-size: 16px;
-    color: black;
-    font-weight: 400;
     margin-bottom: 40px;
 }
 /*  */
@@ -418,6 +409,17 @@ margin-right:20px;
 
 /* mobile screens */
 @media only screen and (max-width: 768px) {
+    /* common */
+    .subheading1{
+        font-size: 28px;
+    
+    }
+    
+    .subheading2{
+        font-size: 16px;
+     
+    }
+    /*  */
 
     /* navbar */
     header {
@@ -475,7 +477,7 @@ margin-right:20px;
 
 
     #hiw {
-        margin: 20px;
+        /* margin: 20px; */
     }
 
     /* background */
