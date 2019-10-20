@@ -9,6 +9,7 @@
     <title>Drench | Waterless car wash</title>
     <link rel="stylesheet" href="style.css">
     <link href="https://fonts.googleapis.com/css?family=Poppins:400,600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
 </head>
 
 <body>
@@ -28,6 +29,7 @@
         </div>
         <div class="extra-buttons">
             <a href="#contact-us">Contact Us</a>
+         
         </div>
 
     </header>
@@ -46,7 +48,7 @@
                 </div>
             </div>
             <div class="hero-right">
-                <img src="images/heroimage.png" alt="">
+                <img data-aos="fade-down" data-aos-duration="1500" src="images/heroimage.png" alt="">
             </div>
         </section>
         <section class="how-it-works">
@@ -55,17 +57,17 @@
             <h4 class="subheading2">see how we do the magic</h4>
             <div class="how-it-works-wrapper">
                 <div class="hiw-card">
-                    <img src="images/car1.png" alt="">
+                    <img src="images/car1.png" alt="car" data-aos-duration="1500" data-aos="zoom-in">
                     <h5>Step 1</h5>
                     <p>Leave your vehicle at the parking spot</p>
                 </div>
                 <div class="hiw-card">
-                    <img src="images/equipments.png" alt="">
+                    <img src="images/equipments.png" alt="equipments" data-aos-duration="1500" data-aos="zoom-in">
                     <h5>Step 2</h5>
                     <p>Open all the car doors</p>
                 </div>
                 <div class="hiw-card">
-                    <img src="images/technicians.png" alt="">
+                    <img src="images/technicians.png" alt="technicans" data-aos-duration="1500" data-aos="zoom-in">
                     <h5>Step 3</h5>
                     <p>2 of our experts will make your car awesome</p>
                 </div>
@@ -81,7 +83,7 @@
 
 
                 </div>
-                <div class="features-right">
+                <div class="features-right" >
                     <ul>
 
                         <li><img src="images/tick.png" alt="tick" class="tick"> No chemicals or wastewater</li>
@@ -117,13 +119,29 @@
         <section class="contact-us" id="contact-us">
             <h1 class="subheading1">Get in touch</h1>
             <h4 class="subheading2">Feedback or complaints just let us know</h4>
+            <div id="form-box">
+
+                    <form method="POST" action="https://formspree.io/drenchnow@gmail.com">
+                        <label for="Name">Name</label>
+                        <input placeholder="" type="text" name="name" id="Name" required>
+                       <br>
+                        <label for="Email">Email</label>
+                        <input placeholder="" type="email" name="email" id="Email" required>
+                        <br>
+                       <label for="Message">Message</label>
+                       <textarea placeholder="" name="Message" id="Message" cols="30" rows="4"></textarea>
+                        
+                   <input type="submit" value="Send">
+                    </form>
+                </div>
+                <br>
         </section>
     </main>
 
     <footer>
         <div class="footer-wrapper">
             <div class="footer-left">
-                    <h2>Contact</h2>
+                <h2>Contact</h2>
                 <div class="contact-icon">
                     <img src="images/location.svg" alt="location"><span>Bengaluru, India</span><br>
                 </div>
@@ -131,9 +149,9 @@
                     <img src="images/call.svg" alt="phone"><span>+91 7008300999</span><br>
                 </div>
                 <div class="contact-icon">
-                    <img src="images/mail.svg" alt="location"><span>contact@test.com</span><br>
+                    <img src="images/email.svg" alt="location"><span>contact@test.com</span><br>
                 </div>
-               
+
             </div>
             <div class="footer-right">
                 <h2>About Us</h2>
@@ -152,6 +170,10 @@
 
 
     </footer>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
 </body>
 
 </html>
