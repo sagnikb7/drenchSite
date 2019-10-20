@@ -485,8 +485,8 @@ input[type=submit]:hover{
     /* navbar */
     header {
         flex-direction: column;
-        min-height: 12vh;
-        background: #fafafa;
+        min-height: 15vh;
+        background: #eeeeee;
         border-radius: 0px 0px 50px 50px;
     }
     .logo-wrapper{
