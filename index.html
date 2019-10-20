@@ -22,18 +22,19 @@
             <nav>
                 <ul class="nav-wrapper">
                     <li><a class="navLink" href="#features">Features</a></li>
-                    <li><a class="navLink" href="">About</a></li>
+                    <li><a class="navLink" href="#footer">About</a></li>
                     <li><a class="navLink" href="#faq">FAQ</a></li>
                 </ul>
             </nav>
         </div>
         <div class="extra-buttons">
             <a href="#contact-us">Contact Us</a>
-         
+
         </div>
 
     </header>
-
+    <a onclick="topFunction()" id="myBtn" title="Go to top"><img src="images/up-arrow.svg" width="20"
+            alt="up arrow" /></a>
     <main>
         <img class="big-circle" src="images/big-eclipse.svg" alt="big-circle">
 
@@ -83,7 +84,7 @@
 
 
                 </div>
-                <div class="features-right" >
+                <div class="features-right">
                     <ul>
 
                         <li><img src="images/tick.png" alt="tick" class="tick"> No chemicals or wastewater</li>
@@ -121,25 +122,25 @@
             <h4 class="subheading2">Feedback or complaints just let us know</h4>
             <div id="form-box">
 
-                    <form method="POST" action="https://formspree.io/drenchnow@gmail.com">
-                        <label for="Name">Name</label>
-                        <input placeholder="" type="text" name="name" id="Name" required>
-                       <br>
-                        <label for="Email">Email</label>
-                        <input placeholder="" type="email" name="email" id="Email" required>
-                        <br>
-                       <label for="Message">Message</label>
-                       <textarea placeholder="" name="Message" id="Message" cols="30" rows="4"></textarea>
-                        
-                   <input type="submit" value="Send">
-                    </form>
-                </div>
-                <br>
+                <form method="POST" action="https://formspree.io/drenchnow@gmail.com">
+                    <label for="Name">Name</label>
+                    <input placeholder="" type="text" name="name" id="Name" required>
+                    <br>
+                    <label for="Email">Email</label>
+                    <input placeholder="" type="email" name="email" id="Email" required>
+                    <br>
+                    <label for="Message">Message</label>
+                    <textarea placeholder="" name="Message" id="Message" cols="30" rows="4"></textarea>
+
+                    <input type="submit" value="Send">
+                </form>
+            </div>
+            <br>
         </section>
     </main>
 
     <footer>
-        <div class="footer-wrapper">
+        <div class="footer-wrapper" id="footer">
             <div class="footer-left">
                 <h2>Contact</h2>
                 <div class="contact-icon">
@@ -173,6 +174,34 @@
     <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
     <script>
         AOS.init();
+    </script>
+    <script>
+        var mybutton = document.getElementById("myBtn");
+        //Get the button:
+        document.addEventListener("DOMContentLoaded", function () {
+            mybutton.style.display = "none";
+        });
+
+        // When the user scrolls down 20px from the top of the document, show the button
+
+        window.onscroll = () => {
+            scrollFunction();
+        };
+        let scrollFunction = () => {
+            if (
+                document.body.scrollTop > 20 ||
+                document.documentElement.scrollTop > 20
+            ) {
+                mybutton.style.display = "flex";
+            } else {
+                mybutton.style.display = "none";
+            }
+        };
+        // When the user clicks on the button, scroll to the top of the document
+        function topFunction() {
+            document.body.scrollTop = 0; // For Safari
+            document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
+        }
     </script>
 </body>
 
