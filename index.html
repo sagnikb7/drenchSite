@@ -15,7 +15,15 @@
 <body>
     <header>
         <div class="logo-wrapper">
-            <img id="logoImage" src="images/logo.png" alt="logo">
+            <div class="logo-text">
+                    <h5>Drench</h5>
+                    <h6>Your car, our care</h6>
+            </div>
+            <div class="logo-image">
+                    <img id="logoImage" src="images/icon.png" alt="logo">
+            </div>
+         
+          
             <!-- <h4 id="logoTitle">Drench</h4> -->
         </div>
         <div class="navbar">
@@ -54,7 +62,7 @@
         </section>
         <section class="how-it-works">
 
-            <h1 class="subheading1" id="hiw">How it works 🌠</h1>
+            <h1 class="subheading1" id="hiw">How it works</h1>
             <h4 class="subheading2">see how we do the magic</h4>
             <div class="how-it-works-wrapper">
                 <div class="hiw-card">
@@ -147,10 +155,10 @@
                     <img src="images/location.svg" alt="location"><span>Bengaluru, India</span><br>
                 </div>
                 <div class="contact-icon">
-                    <img src="images/call.svg" alt="phone"><span>+91 7008300999</span><br>
+                    <img src="images/call.svg" alt="phone"><span><a href="tel:+91-8088808593">8088808593</a>&nbsp;<a style="padding:2px 6px; font-size:14px; background:tomato; border-radius:10px;" href="tel:+91-8088808593">Call us</a></span><br>
                 </div>
                 <div class="contact-icon">
-                    <img src="images/email.svg" alt="location"><span>contact@test.com</span><br>
+                    <img src="images/email.svg" alt="location"><a href="mailto:abc@gmail.com">abc@gmail.com</a><br>
                 </div>
 
             </div>
@@ -171,9 +179,14 @@
 
 
     </footer>
+
+
+              
     <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    
     <script>
         AOS.init();
+
     </script>
     <script>
         var mybutton = document.getElementById("myBtn");
@@ -203,6 +216,12 @@
             document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
         }
     </script>
+
+
+
+    
+
+
 </body>
 
 </html>

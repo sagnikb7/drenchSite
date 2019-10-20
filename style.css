@@ -59,13 +59,33 @@ header {
     display: flex;
     align-items: center;
 }
+.logo-text{
+flex:3;
+order:2;
 
-.logo-wrapper img {
-    width: 50%;
-    /* height: 54px; */
-    margin-right: 6px;
-    margin-left: 20px;
+}
+.logo-text h5{
+font-size:24px;
+font-weight: 600;
+color:#48915a;
+line-height: 22px;
+}
+.logo-text h6{
+
+    font-size:12px;
+    color: #424242;;
+}
+.logo-image{
+   
+    flex:1;
+    order:1
+}
+
+.logo-image img {
+    width: 60%;
     border-radius: 4px;
+    margin-left:20px;
+    margin-top:10px;
 
 }
 
@@ -406,11 +426,15 @@ footer {
     /* text-align:center; */
 }
 
-footer p {}
+
 
 .contact-icon {
     margin-top: 10px;
     font-size: 16px;
+}
+.contact-icon a{
+    color:white;
+    text-decoration: none;
 }
 
 .footer-left img {
@@ -505,7 +529,13 @@ input[type=submit]:hover {
 
 /*  */
 @media only screen and (max-width: 1024px) {
-
+/* nav */
+.logo-text{
+    display:none;
+}
+.logo-image img{
+    width:30%;
+}
     /* hero */
     .hero {
         min-height: 50vh;
@@ -514,6 +544,18 @@ input[type=submit]:hover {
     /* background */
     .big-circle {
         display: none;
+    }
+    /* features */
+    .features-right{
+        border-radius:30px;
+    }
+    /* faqs */
+    #faqs{
+        border-radius:30px;   
+    }
+    /* contact */
+    #form-box{
+        width:60%
     }
 }
 
@@ -554,9 +596,13 @@ input[type=submit]:hover {
         justify-content: center;
     }
 
-    .logo-wrapper img {
+    .logo-image img {
         width: 30%;
         margin: 0px;
+    }
+    .logo-image{
+        display: flex;
+    justify-content: center
     }
 
     .extra-buttons {
