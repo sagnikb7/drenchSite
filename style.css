@@ -28,6 +28,18 @@ button {
     color: #424242;
 }
 
+/* animation  */
+@keyframes shadow-pulse
+{
+     0% {
+          box-shadow: 0 0 0 0px rgba(0, 0, 0, 0.3);
+     }
+     100% {
+          box-shadow: 0 0 0 20px rgba(0, 0, 0, 0);
+     }
+}
+
+
 #myBtn {
     cursor: pointer;
     background: #52de97;
@@ -44,6 +56,28 @@ button {
     display: flex;
     align-content: center;
     justify-content: center;
+}
+#myBtn_Whatsapp{
+    cursor: pointer;
+    background: #25d366;
+    border: 3px solid #25d366;
+    position: fixed;
+    bottom: 80px;
+    right: 30px;
+    z-index: 999;
+    /* box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06); */
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    /* padding:10px; */
+    display: flex;
+    align-content: center;
+    justify-content: center;
+   
+    animation-name: shadow-pulse;
+    animation-duration: 1.5s; /* or: Xms */
+    animation-delay: 4s;
+    animation-iteration-count: 10;
 }
 /* animation */
 .floating {  
