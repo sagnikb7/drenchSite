@@ -4,6 +4,10 @@
     box-sizing: border-box;
 }
 
+a{
+    cursor: pointer;
+}
+
 body {
     font-family: 'Poppins', sans-serif;
 }
@@ -120,7 +124,7 @@ line-height: 22px;
 }
 
 .navLink:hover {
-    background: #195AB0;
+    background: #48915a;
     color:#fafafa;
 }
 
