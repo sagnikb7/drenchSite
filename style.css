@@ -72,7 +72,6 @@ button {
   display: flex;
   align-content: center;
   justify-content: center;
-
   animation-name: shadow-pulse;
   animation-duration: 1.5s; /* or: Xms */
   animation-delay: 4s;
@@ -152,14 +151,15 @@ header {
 
 .navLink {
   text-decoration: none;
-  padding: 10px 16px;
+  padding: 6px 16px;
   color: #90a4ae;
   font-weight: bold;
 }
 
 .navLink:hover {
-  background: #48915a;
+  background: #195ab0;
   color: #fafafa;
+  border-radius: 8px;
 }
 
 .nav-wrapper {
@@ -178,14 +178,14 @@ header {
   color: #fafafa;
   font-size: 14px;
   font-weight: bold;
-  background: #212121;
+  background: #195ab0;
   padding: 8px 16px;
   border-radius: 25px;
   transition: 0.3s ease-out;
 }
 
 .extra-buttons a:hover {
-  background: #195ab0;
+  background: #212121;
 }
 
 /* background  */
@@ -225,8 +225,9 @@ main {
 .hero-left h1 {
   font-size: 48px;
   font-weight: 600;
-  margin-bottom: 16px;
+  margin-bottom: 48px;
   color: #212121;
+  line-height: 1.2;
 }
 
 .hero-left p {
@@ -279,7 +280,7 @@ main {
 /* how it works section */
 .how-it-works {
   /* background:linear-gradient(left,); */
-  min-height: 100vh;
+  min-height: 85vh;
   border-radius: 100px 100px 10px 10px;
   background: linear-gradient(-5deg, white 50%, #e2e2e770 50%);
 }
@@ -310,7 +311,8 @@ main {
   width: 65%;
   height: auto;
   border-radius: 50%;
-  margin-bottom: 20px;
+  margin-bottom: 24px;
+  margin-top: 24px;
   box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.1);
 }
 
