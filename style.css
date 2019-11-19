@@ -154,6 +154,7 @@ header {
   padding: 6px 16px;
   color: #90a4ae;
   font-weight: bold;
+  transition: 0.25s ease-out;
 }
 
 .navLink:hover {

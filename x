@@ -1,0 +1,335 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script
+      async
+      src="https://www.googletagmanager.com/gtag/js?id=UA-151426942-1"
+    ></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag() {
+        dataLayer.push(arguments);
+      }
+      gtag("js", new Date());
+
+      gtag("config", "UA-151426942-1");
+    </script>
+
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <meta
+      name="google-site-verification"
+      content="hhYZV69fA10eVjMsOVjf3zgIBF6q0ZD0oUgeM2yDr14"
+    />
+    <meta
+      name="description"
+      content="Drench is a waterless, eco-friendly car washing service. It's a whole new way of cleaning your car without wasting a single drop of water"
+    />
+    <meta name="author" content="Drench" />
+    <meta name="robots" content="index/follow" />
+    <meta
+      name="keywords"
+      content="Drench,Drenchnow,Drench now,car wash,carwash, waterless, eco friendly, waterless car wash,Bangalore,Bengaluru,Karnataka,India,car wash in Bangalore, save water"
+    />
+
+    <link rel="icon" type="image/png" href="images/icon.png" />
+    <title>Drench | Waterless car wash</title>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      href="https://fonts.googleapis.com/css?family=Poppins:400,600&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+  </head>
+
+  <body>
+    <header>
+      <div class="logo-wrapper">
+        <div class="logo-text">
+          <h5>Drench</h5>
+          <h6>Your car, our care</h6>
+        </div>
+        <div class="logo-image">
+          <img id="logoImage" src="images/icon.png" alt="logo" />
+        </div>
+
+        <!-- <h4 id="logoTitle">Drench</h4> -->
+      </div>
+      <div class="navbar">
+        <nav>
+          <ul class="nav-wrapper">
+            <li>
+              <a class="navLink" onclick="scrollToElement('#footer');">About</a>
+            </li>
+            <li>
+              <a class="navLink" onclick="scrollToElement('#faq');">FAQ</a>
+            </li>
+            <li>
+              <a class="navLink" onclick="scrollToElement('#features');"
+                >Features</a
+              >
+            </li>
+          </ul>
+        </nav>
+      </div>
+      <div class="extra-buttons">
+        <a onclick="scrollToElement('#contact-us');">Contact Us</a>
+      </div>
+    </header>
+    <a onclick="topFunction()" id="myBtn" title="Go to top"
+      ><img src="images/up-arrow.svg" width="20" alt="up arrow"
+    /></a>
+    <!-- whatsapp button -->
+    <a
+      href="https://api.whatsapp.com/send?phone=918088808593&text=Hello Drench!! I want to schedule a car wash"
+      id="myBtn_Whatsapp"
+      title="Whatsapp link"
+      ><img src="images/icons8-whatsapp.svg" width="40" alt="up arrow"
+    /></a>
+    <main>
+      <img class="big-circle" src="images/big-eclipse.svg" alt="big-circle" />
+
+      <section class="hero">
+        <div class="hero-left">
+          <h1>A clean car says a lot about you !</h1>
+          <p>
+            We know that your vehicle is your favorite asset. Keeping them clean
+            is your pride. Drench is created to give a complete shower to your
+            vehicle using the <span>waterless technique.</span>
+          </p>
+          <div class="hero-left-buttons">
+            <a
+              class="hero-button1 hero-button1-style1"
+              onclick="scrollToElement('#hiw');"
+              >Learn more</a
+            >
+            <a
+              class="hero-button1 hero-button1-style2"
+              onclick="scrollToElement('#contact-us');"
+              >Try Us</a
+            >
+          </div>
+        </div>
+        <div class="hero-right">
+          <img
+            data-aos="fade-down"
+            data-aos-duration="1500"
+            src="images/heroimage.png"
+            alt="banner"
+          />
+        </div>
+      </section>
+      <section class="how-it-works">
+        <h1 class="subheading1" id="hiw">How it works</h1>
+        <h4 class="subheading2">see how we do the magic</h4>
+        <div class="how-it-works-wrapper">
+          <div class="hiw-card">
+            <img
+              src="images/car1.png"
+              alt="car"
+              data-aos-duration="1500"
+              data-aos="zoom-in"
+            />
+            <h5>Step 1</h5>
+            <p>Leave your vehicle at the parking spot</p>
+          </div>
+          <div class="hiw-card">
+            <img
+              src="images/equipments.png"
+              alt="equipments"
+              data-aos-duration="1500"
+              data-aos="zoom-in"
+            />
+            <h5>Step 2</h5>
+            <p>Open all the car doors</p>
+          </div>
+          <div class="hiw-card">
+            <img
+              src="images/technicians.png"
+              alt="technicans"
+              data-aos-duration="1500"
+              data-aos="zoom-in"
+            />
+            <h5>Step 3</h5>
+            <p>2 of our experts will make your car awesome</p>
+          </div>
+        </div>
+      </section>
+      <section class="features" id="features">
+        <h1 class="subheading1">Drench loves your car</h1>
+        <h4 class="subheading2">we are a team of car enthusiasts</h4>
+        <div class="features-wrapper">
+          <div class="features-left">
+            <img src="images/features.png" class="" alt="features" />
+          </div>
+          <div class="features-right">
+            <ul>
+              <li>
+                <img src="images/tick.png" alt="tick" class="tick" /> No
+                chemicals or wastewater
+              </li>
+              <li>
+                <img src="images/tick.png" alt="tick" class="tick" />
+                Eco-friendly and gentle
+              </li>
+              <li>
+                <img src="images/tick.png" alt="tick" class="tick" /> Feel the
+                freshness in every wash
+              </li>
+              <li>
+                <img src="images/tick.png" alt="tick" class="tick" /> Schedule
+                an appointment at your convenience
+              </li>
+            </ul>
+          </div>
+        </div>
+      </section>
+      <section class="faq" id="faq">
+        <h1 class="subheading1">FAQ?</h1>
+        <h4 class="subheading2">Let us clear your doubts.</h4>
+        <div id="faqs">
+          <h3>
+            Facing issues?
+          </h3>
+          <p>
+            We are there 24x7 for you. Raise a query, call us or write to us, we
+            will take care immediately.
+          </p>
+          <h3>What type of cars do we service?</h3>
+          <p>
+            All kinds of car hatchbacks, sedans, SUVs, the premium you name it.
+          </p>
+          <h3>How much time does it take for a typical wash?</h3>
+          <p>Time varies depending upon the type of car from 30 to 90 mins</p>
+        </div>
+      </section>
+      <section class="contact-us" id="contact-us">
+        <h1 class="subheading1">Get in touch</h1>
+        <h4 class="subheading2">Feedback or complaints just let us know</h4>
+        <div id="form-box">
+          <form method="POST" action="https://formspree.io/drenchnow@gmail.com">
+            <label for="Name">Name</label>
+            <input placeholder="" type="text" name="name" id="Name" required />
+            <br />
+            <label for="Email">Email</label>
+            <input
+              placeholder=""
+              type="email"
+              name="email"
+              id="Email"
+              required
+            />
+            <br />
+            <label for="Message">Message</label>
+            <textarea
+              placeholder=""
+              name="Message"
+              id="Message"
+              cols="30"
+              rows="4"
+            ></textarea>
+
+            <input type="submit" value="Send" />
+          </form>
+        </div>
+        <br />
+      </section>
+    </main>
+
+    <footer>
+      <div class="footer-wrapper" id="footer">
+        <div class="footer-left">
+          <h2>Contact</h2>
+          <div class="contact-icon">
+            <img src="images/location.svg" alt="location" /><span
+              >Bengaluru, India</span
+            ><br />
+          </div>
+          <div class="contact-icon">
+            <img src="images/call.svg" alt="phone" /><span
+              ><a href="tel:+91-8088808593">8088808593</a>&nbsp;<a
+                style="padding:2px 6px; font-size:14px; background:tomato; border-radius:10px;"
+                href="tel:+91-8088808593"
+                >Call us</a
+              ></span
+            ><br />
+          </div>
+          <div class="contact-icon">
+            <img src="images/email.svg" alt="location" /><a
+              href="mailto:drenchnow@gmail.com"
+              >drenchnow@gmail.com</a
+            ><br />
+          </div>
+        </div>
+        <div class="footer-right">
+          <h2>About Us</h2>
+          <p>A car wash company that doesn't waste a single drop of water</p>
+
+          <a
+            href="https://www.facebook.com/Drenchin-122188742511567/"
+            target="_blank"
+            ><img src="images/facebook.svg" alt="facebook link"
+          /></a>
+          <a
+            href="https://www.instagram.com/drench.in/?igshid=ymkx99mndcn9"
+            target="_blank"
+            ><img src="images/instagram.svg" alt="instagram link"
+          /></a>
+          <!-- <a
+            href="https://api.whatsapp.com/send?phone=918088808593&text=Hello Drench!! I want to schedule a car wash"
+            ><img src="images/whatsapp.svg" alt="whatsapp link" />
+          </a> -->
+
+          <h1>
+            Made with &nbsp;<img
+              src="images/heart.svg"
+              alt="love"
+              style="width:20px; margin:0; margin-top:10px;"
+            />
+            in Bengaluru
+          </h1>
+        </div>
+      </div>
+    </footer>
+
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+
+    <script>
+      AOS.init();
+    </script>
+    <script src="./util.js" type="text/javascript"></script>
+    <script>
+      var mybutton = document.getElementById("myBtn");
+      //Get the button:
+      document.addEventListener("DOMContentLoaded", function() {
+        mybutton.style.display = "none";
+      });
+
+      // When the user scrolls down 20px from the top of the document, show the button
+
+      window.onscroll = () => {
+        scrollFunction();
+      };
+      let scrollFunction = () => {
+        if (
+          document.body.scrollTop > 20 ||
+          document.documentElement.scrollTop > 20
+        ) {
+          mybutton.style.display = "flex";
+        } else {
+          mybutton.style.display = "none";
+        }
+      };
+      // When the user clicks on the button, scroll to the top of the document
+      function topFunction() {
+        document
+          .querySelector(".logo-wrapper")
+          .scrollIntoView({ behavior: "smooth" });
+        // document.body.scrollTop = 0; // For Safari
+        // document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
+      }
+    </script>
+  </body>
+</html>
